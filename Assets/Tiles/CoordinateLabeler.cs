@@ -9,7 +9,7 @@ using System;
 public class CoordinateLabeler : MonoBehaviour
 {
     [SerializeField] Color defaultColor = Color.white;
-    [SerializeField] Color blockedColor = Color.red;
+    [SerializeField] Color blockedColor = Color.gray;
     [SerializeField] Color exploredColor = Color.yellow;
     [SerializeField] Color pathColor = new Color(1f, 0.5f, 0f);
 
@@ -18,9 +18,10 @@ public class CoordinateLabeler : MonoBehaviour
     GridManager gridManager;
     void Awake()
     {
+        gridManager = FindObjectOfType<GridManager>();
         label = GetComponent<TextMeshPro>();
         label.enabled = false;
-        gridManager = FindObjectOfType<GridManager>();
+
         DisplayCoordinates();
     }
 

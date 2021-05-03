@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01228b52fbefbe54d93e1915894b14bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridSize: {x: 3, y: 4}
+  gridSize: {x: 5, y: 5}
 --- !u!4 &281734814
 Transform:
   m_ObjectHideFlags: 0
@@ -5078,28 +5078,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60440c2d88229f40adf60f946998ab9, type: 3}
---- !u!1 &506090020 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2424651268600677581, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
-  m_PrefabInstance: {fileID: 2424651270187237792}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &506090021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506090020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99be32d1472450a48992c76e970aba08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSearchNode:
-    coordinates: {x: 4, y: 4}
-    isWalkable: 0
-    isExplored: 0
-    isPath: 0
 --- !u!1001 &515136530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19531,6 +19509,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 506090021, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
+      propertyPath: destinationCoordinates.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 506090021, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
+      propertyPath: destinationCoordinates.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 506090021, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
+      propertyPath: currentSearchNode.coordinates.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 506090021, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
+      propertyPath: currentSearchNode.coordinates.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2424651268600677581, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
       propertyPath: m_Name
       value: ObjectPool
@@ -19578,10 +19572,6 @@ PrefabInstance:
     - target: {fileID: 2424651268600677582, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2424651268600677583, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
-      propertyPath: spawnTime
-      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b74d493fcbd9b654b9d7b81d81b9f2bd, type: 3}
